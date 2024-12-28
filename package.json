@@ -1,0 +1,17 @@
+{
+  "name": "board-project",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "yarn workspaces run dev",
+    "build": "yarn workspaces run build",
+    "dev:frontend": "yarn workspace frontend dev",
+    "dev:backend": "yarn workspace backend start:dev",
+    "build:frontend": "yarn workspace frontend build",
+    "build:backend": "yarn workspace backend build"
+  }
+}
